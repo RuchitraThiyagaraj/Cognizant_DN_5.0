@@ -43,6 +43,11 @@ async def create_course(
         department_id=course.department_id
     )
 
+    '''
+    instead of this we can use new_course = Course(**course.model_dump()) , course.model_dump() converts the Pydantic model into a dictionary
+    and ** unpacks it
+    '''
+
     db.add(new_course)
 
     await db.commit()
@@ -51,6 +56,7 @@ async def create_course(
     return new_course
 
 #get a specific course [when a new course is entered , automatically the course ids would be stored using auto_increment]
+
 @app.get("/api/courses/{course_id}", response_model=CourseResponse)
 async def get_course(
     course_id: int,
@@ -72,7 +78,7 @@ async def get_course(
     return course
 
 
-#testing the pagination[skip , limit]
+#testing the pagination[skip and limit]
 @app.get("/api/courses", response_model=list[CourseResponse])
 async def get_courses(
     skip: int = 0,
