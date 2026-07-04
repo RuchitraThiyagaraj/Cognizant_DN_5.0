@@ -1,67 +1,66 @@
+Hands-On 4 – Task 3 Observation
 
-Hands-On 4 Task 3 Observation:
+Output
 
-Output:
 ============================================================
 VERSION 1 : N+1 QUERY
 ============================================================
-Arjun Mehta
-Arjun Mehta
-Priya Suresh
-Priya Suresh
-Rohan Verma
-Vikram Das
-Vikram Das
-Kavya Menon
-Deepika Rao
-Deepika Rao
-Rahul Sharma
-Ashwina Narendrakumar
+
+John
+John
+Emma
+Emma
+Mike
+David
+David
+Sarah
+James
+James
+Anna
+Chris
 
 Queries Executed : 13
-Execution Time : 0.0 seconds
+Execution Time : 0.000 seconds
 
 
 ============================================================
 VERSION 2 : SINGLE JOIN
 ============================================================
-Arjun Mehta - Data Structures & Algorithms - Grade: A
-Arjun Mehta - Database Management Systems - Grade: B
-Priya Suresh - Data Structures & Algorithms - Grade: B
-Priya Suresh - Object Oriented Programming - Grade: A
-Rohan Verma - Circuit Theory - Grade: A
-Vikram Das - Data Structures & Algorithms - Grade: B
-Vikram Das - Database Management Systems - Grade: A
-Kavya Menon - Circuit Theory - Grade: B
-Deepika Rao - Data Structures & Algorithms - Grade: A
-Deepika Rao - Object Oriented Programming - Grade: B
-Rahul Sharma - Database Management Systems - Grade: None
-Ashwina Narendrakumar - Database Management Systems - Grade: None
+
+John - Data Structures - Grade: A
+John - Database Systems - Grade: B
+Emma - Data Structures - Grade: B
+Emma - Operating Systems - Grade: A
+Mike - Computer Networks - Grade: A
+David - Data Structures - Grade: B
+David - Database Systems - Grade: A
+Sarah - Computer Networks - Grade: B
+James - Data Structures - Grade: A
+James - Operating Systems - Grade: B
+Anna - Database Systems - Grade: None
+Chris - Database Systems - Grade: None
 
 Queries Executed : 1
-Execution Time : 0.00101 seconds
+Execution Time : 0.001 seconds
 
 Connection Closed.
 
 
+Observation
 
 Version 1:
-
 • One query fetches all enrollments.
-• Then one additional query is executed for every enrollment.
+• One additional query runs for each enrollment.
 • Total Queries = N + 1
 
-Example
+Example:
 10 enrollments
-1 + 10 = 11 Queries
-
+1 + 10 = 11 queries
 
 Version 2:
-
-Used JOIN
-Everything is fetched in one SQL query.
-Total Queries = 1
+• Uses a JOIN.
+• Fetches all data in one SQL query.
+• Total Queries = 1
 
 Conclusion:
-JOIN is much faster.
-It reduces database round trips,improves performance,and avoids the N+1 Query Problem.
+JOIN is faster because it reduces database queries, improves performance, and avoids the N+1 Query Problem.
