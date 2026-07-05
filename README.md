@@ -64,7 +64,7 @@ The training program is designed to help learners:
 ├── README.md
 │
 ├── Python Backend Framework Module Solutions/
-│   └── Ashwina K N/
+│   └──T.RUCHITRA/
 │       ├── README.md
 │       ├── PythonBackendFrameworks_HandsOn.pdf
 │       ├── handson_01/
