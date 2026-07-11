@@ -7,15 +7,12 @@ import StudentProfile from "./components/StudentProfile";
 
 function App() {
 
-  //CONSTANTS
   const siteName = "Student Portal";
 
-  //STATES
   const [courseList, setCourseList] = useState([]);
-
   const [searchTerm, setSearchTerm] = useState("");
 
-  //loading state
+  //loadin state
   const [loading, setLoading] = useState(true);
 
   //error state
@@ -28,7 +25,7 @@ function App() {
   }, [courseList]);
 
 
-  //FETCH COURSES
+  //fetch courses
   useEffect(() => {
 
     const fetchCourses = async () => {
