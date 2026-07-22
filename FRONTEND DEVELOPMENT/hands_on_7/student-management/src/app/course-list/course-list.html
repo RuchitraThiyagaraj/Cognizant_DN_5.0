@@ -1,0 +1,25 @@
+<input
+  type="text"
+  placeholder="Search course"
+  [(ngModel)]="searchTerm">
+
+<div *ngIf="loading">
+  Loading...
+</div>
+
+<div *ngIf="!loading && courses.length > 0">
+
+  <app-course-card
+    *ngFor="let course of courses"
+    [name]="course.title"
+    [code]="course.id"
+    [credits]="course.userId"
+    [grade]="course.body">
+  </app-course-card>
+
+</div>
+
+<p *ngIf="!loading && courses.length === 0">
+  No courses found
+</p>
+
