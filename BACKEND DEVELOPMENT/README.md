@@ -5,6 +5,7 @@
 As part of the **Cognizant Digital Nurture 5.0 – Python Full Stack Engineer Deep Skilling Program**, this module focuses on backend application development using modern Python web frameworks.
 
 The module provides practical experience in developing RESTful APIs, implementing CRUD operations, database integration, authentication, request validation, and understanding scalable backend architectures using **Django, Flask, and FastAPI**.
+
 ---
 
 ## Module Covered
