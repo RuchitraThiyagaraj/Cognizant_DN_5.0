@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6 Practice</title>
+
+    <style>
+        h2 {
+            color: lightblue;
+            background-color: blueviolet;
+            width: fit-content;
+            padding: 5px;
+        }
+
+        * {
+            background-color: beige;
+        }
+
+        .course {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .post {
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        #retry-btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Portal</h1>
+
+    <h3 id="loading"></h3>
+
+    <section id="notifications">
+        <h2>Notifications</h2>
+        <div id="posts"></div>
+        <button id="retry-btn" hidden>Retry</button>
+    </section>
+
+    <div class="course-grid"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>

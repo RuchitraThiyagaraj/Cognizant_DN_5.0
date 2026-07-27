@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Accessibility Audit
+
+    Initial Lighthouse Score:
+    Issues Found:
+    1. Missing labels
+    2. Missing ARIA attributes
+    3. Course cards not keyboard accessible
+    4. Low colour contrast
+
+    Colour Contrast
+    Before: #ADD8E6 on #8A2BE2
+    After: #FFFFFF on #4B0082
+
+    CanIUse:
+    CSS Grid - Supported by Chrome, Firefox, Edge and Safari.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Student Portal</h1>
+
+    <nav aria-label="Main navigation">
+
+        <a href="#" aria-current="page">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Profile</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section id="notifications">
+
+        <h2>Notifications</h2>
+
+        <div id="posts"></div>
+
+        <button id="retry-btn" hidden>
+            Retry
+        </button>
+
+    </section>
+
+    <section>
+
+        <label for="search-courses">
+            Search Courses
+        </label>
+
+        <input
+            id="search-courses"
+            type="text"
+            placeholder="Search courses">
+
+        <button id="sort-btn">
+            SORT
+        </button>
+
+        <p
+            id="results-count"
+            role="status"
+            aria-live="polite">
+            5 courses found
+        </p>
+
+    </section>
+
+    <section>
+
+        <button
+            id="menu-btn"
+            aria-expanded="false">
+
+            Menu
+
+        </button>
+
+    </section>
+
+
+    <section>
+
+        <div class="course-grid"></div>
+
+    </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+
+<script>
+cssVars();
+</script>
+
+<script type="module" src="app.js"></script>
+
+</body>
+
+</html>

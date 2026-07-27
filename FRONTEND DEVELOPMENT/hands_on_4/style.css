@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+
+body {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: darkblue;
+}
+
+h2 {
+    color: lightblue;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#loading {
+    color: blue;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 5px 20px 0;
+}
+
+button:hover {
+    background-color: dodgerblue;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.course {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.course:hover {
+    transform: scale(1.03);
+}
+
+.course h2,
+.course p {
+    background: transparent;
+}
+
+#selected-course,
+#total-credits {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#notifications {
+    margin: 30px 0;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.post h3,
+.post p {
+    background: transparent;
+    margin-bottom: 8px;
+}
+
+#retry-btn {
+    display: inline-block;
+}
