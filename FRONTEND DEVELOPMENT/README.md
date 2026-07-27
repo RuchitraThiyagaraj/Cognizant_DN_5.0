@@ -41,7 +41,7 @@ The module covers frontend fundamentals, responsive design, JavaScript programmi
 * Promises
 * Async / Await
 * Fetch API
-* Axios Integration
+* Axios Integration.
 
 ---
 
