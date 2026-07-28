@@ -1,6 +1,5 @@
-from pydantic import BaseModel, ConfigDict
 from typing import Optional,List
-
+from pydantic import BaseModel, ConfigDict, EmailStr
 
 
 class CourseCreate(BaseModel):
